@@ -36,6 +36,22 @@ const questions = [
         message: 'Please add testers'
     },
     {
+        type: 'list',
+        message: 'What type of license you use?',
+        name: 'license',
+        choices: ['BSD Zero Clause License', 'MIT License', 'Apache License', 'Creative Commons', 'GNU General Public License'],
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please enter your github username'
+    },
+    {
+        type: 'email',
+        name: 'email',
+        message: 'Please enter your email'
+    },
+    {
       type: 'confirm',
       name: 'subscribe',
       message: 'Would you like to subscribe to our newsletter?'
